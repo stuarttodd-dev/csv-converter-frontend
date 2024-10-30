@@ -63,6 +63,7 @@ class CsvController extends Controller
 
         $rules = $request->input('rules');
         $actionAttributes = $request->input('actionAttributes');
+
         $csvFilePath = $request->input('csvFilePath');
 
         $csv = CSV::parseFile($csvFilePath);
@@ -71,8 +72,8 @@ class CsvController extends Controller
         foreach ($rules as $rule) {
             $formattedRules[] = [
                 'type' => "HalfShellStudios\CsvConverter\Rules\\" . $rule['type'],
-                'field' => $rule['field'],
-                'value' => $rule['value']
+                'field' => str_replace('_', ' ', $rule['field']),
+                'value' => str_replace('_', ' ', $rule['value'])
             ];
         }
 
@@ -81,8 +82,8 @@ class CsvController extends Controller
             $formattedActionAttributes[] = [
                 'type' => "HalfShellStudios\CsvConverter\ActionAttributes\\" . $actionAttribute['type'],
                 'field' => $actionAttribute['field'],
-                'find' => $actionAttribute['find'],
-                'replace' => $actionAttribute['replace']
+                'find' => str_replace('_', ' ', $actionAttribute['find']),
+                'replace' => str_replace('_', ' ', $actionAttribute['replace'])
             ];
         }
 
@@ -90,8 +91,6 @@ class CsvController extends Controller
             'rules' => $formattedRules,
             'action_attributes' => $formattedActionAttributes
         ]);
-
-        $csv->adjust();
 
         header('Content-Disposition: attachment; filename="export.csv"');
         header("Cache-control: private");

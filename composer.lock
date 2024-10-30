@@ -3808,12 +3808,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:stuarttodd-dev/csv-converter.git",
-                "reference": "aaed14b628e1efa4db173759f8f29f93c01c00b8"
+                "reference": "e0cf55319d4748e84405ce0f1ff12ac0c0b36abe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stuarttodd-dev/csv-converter/zipball/aaed14b628e1efa4db173759f8f29f93c01c00b8",
-                "reference": "aaed14b628e1efa4db173759f8f29f93c01c00b8",
+                "url": "https://api.github.com/repos/stuarttodd-dev/csv-converter/zipball/e0cf55319d4748e84405ce0f1ff12ac0c0b36abe",
+                "reference": "e0cf55319d4748e84405ce0f1ff12ac0c0b36abe",
                 "shasum": ""
             },
             "require": {
@@ -3879,10 +3879,10 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/stuarttodd-dev/csv-converter/tree/v1.0.1",
+                "source": "https://github.com/stuarttodd-dev/csv-converter/tree/main",
                 "issues": "https://github.com/stuarttodd-dev/csv-converter/issues"
             },
-            "time": "2024-10-30T01:01:33+00:00"
+            "time": "2024-10-30T09:48:17+00:00"
         },
         {
             "name": "symfony/clock",

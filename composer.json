@@ -11,7 +11,7 @@
         "laravel/jetstream": "^5.1",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
-        "stuarttodd-dev/csv-converter": "^1.0",
+        "stuarttodd-dev/csv-converter": "dev-main",
         "tightenco/ziggy": "^2.0"
     },
     "require-dev": {

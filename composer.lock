@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "540c241f0d396add99af172f0e6de820",
+    "content-hash": "c1d0cae639f72c5c600a5b31abecacde",
     "packages": [
         {
             "name": "bacon/bacon-qr-code",
@@ -3804,16 +3804,16 @@
         },
         {
             "name": "stuarttodd-dev/csv-converter",
-            "version": "1.0.0",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "git@github.com:stuarttodd-dev/csv-converter.git",
-                "reference": "0560ebe8fac02e3461d157e39abedf344bcd2e75"
+                "reference": "aaed14b628e1efa4db173759f8f29f93c01c00b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stuarttodd-dev/csv-converter/zipball/0560ebe8fac02e3461d157e39abedf344bcd2e75",
-                "reference": "0560ebe8fac02e3461d157e39abedf344bcd2e75",
+                "url": "https://api.github.com/repos/stuarttodd-dev/csv-converter/zipball/aaed14b628e1efa4db173759f8f29f93c01c00b8",
+                "reference": "aaed14b628e1efa4db173759f8f29f93c01c00b8",
                 "shasum": ""
             },
             "require": {
@@ -3830,6 +3830,7 @@
                 "rector/rector": "^1.2",
                 "squizlabs/php_codesniffer": "^3.10"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -3878,10 +3879,10 @@
                 }
             ],
             "support": {
-                "source": "https://github.com/stuarttodd-dev/csv-converter/tree/v1.0.0",
+                "source": "https://github.com/stuarttodd-dev/csv-converter/tree/v1.0.1",
                 "issues": "https://github.com/stuarttodd-dev/csv-converter/issues"
             },
-            "time": "2024-10-15T23:38:44+00:00"
+            "time": "2024-10-30T01:01:33+00:00"
         },
         {
             "name": "symfony/clock",
@@ -8592,7 +8593,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "stuarttodd-dev/csv-converter": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

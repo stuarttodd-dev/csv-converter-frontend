@@ -24,8 +24,8 @@ class CsvController extends Controller
         $actionAttributeTypes = [
             basename(str_replace('\\', '/', ActionAttribute::PARTIAL_FIND_AND_REPLACE_ACTION_ATTRIBUTE)),
             basename(str_replace('\\', '/', ActionAttribute::FULL_FIND_AND_REPLACE_ACTION_ATTRIBUTE)),
-            basename(str_replace('\\', '/', ActionAttribute::PARTIAL_FIND_AND_REPLACE_ACTION_ATTRIBUTE)),
             basename(str_replace('\\', '/', ActionAttribute::FIND_AND_PREPEND_ACTION_ATTRIBUTE)),
+            basename(str_replace('\\', '/', ActionAttribute::FIND_AND_APPEND_ACTION_ATTRIBUTE)),
         ];
 
         return Inertia::render('Welcome', [
